@@ -1,4 +1,40 @@
 *{
     padding: 0;
-    margin: 0git;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* container style */
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+
+
+
+}
+
+/* header style */
+.header{
+    width: 100%;
+    height:15vh ;
+    background-color:rgb(111, 114, 114);
+    
+}
+
+
+/* content style */
+.content{
+    width: 100%;
+    height:70vh ;
+    background-color:aqua;
+
+}
+
+
+/* footer style */
+.footer{
+    width: 100%;
+    height: 15vh;
+    background-color:rgb(111, 114, 114);
+
 }
