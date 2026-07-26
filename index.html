@@ -1,34 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girgis Essam — Front-End Developer</title>
+  <meta name="description" content="Personal portfolio of Girgis Essam, front-end developer. Projects, skills and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
 
-        <div id="header">
-            <section id="header_sec1" class="header_sect">
-                vvvvv
-            </section>
-            <section id="header_sec2" class="header_sect">
-                vvvvv
-            </section>
-            <section id="header_sec3" class="header_sect">
-                vvvvv
-            </section>
-
-        </div>
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#hero" class="logo">G<span class="dot">.</span></a>
 
 
-        <div class="content">
-
-        </div>
-        <div class="footer">
-
-        </div>
+      <nav class="site-nav" id="siteNav">
+        <a href="#hero">Hello</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Let's talk</a>
+      </nav>
     </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          
+          <h1>I build interfaces<br>that <span class="accent">actually ship.</span></h1>
+          <p class="hero-sub">I'm Girgis essam, a front-end developer who turns designs into fast,
+            accessible, production-ready websites — from first commit to live URL.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card__bar">
+              <span></span><span></span><span></span>
+              <p>developer.js</p>
+            </div>
+            <pre class="code-card__body"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-key">name</span>: <span class="tok-str">'Girgis Essam'</span>,
+  <span class="tok-key">role</span>: <span class="tok-str">'Front-End Developer'</span>,
+  <span class="tok-key">stack</span>: [<span class="tok-str">'HTML'</span>, <span class="tok-str">'CSS'</span>, <span class="tok-str">'JS'</span>],
+  <span class="tok-key">status</span>: <span class="tok-str">'open to work'</span>,
+  <span class="tok-key">deploy</span>: () <span class="tok-kw">=></span> <span class="tok-str">'🚀 shipped'</span>,
+};</code></pre>
+          </div>
+          <div class="blob blob--1"></div>
+          <div class="blob blob--2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about">
+      <div class="wrap about-inner">
+        <div class="about-stats">
+          <div class="stat-card">
+            <p class="stat-num" data-count="3">4</p>
+            <p class="stat-label">Years learning &amp; building</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num" data-count="12">3</p>
+            <p class="stat-label">Projects completed</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num" data-count="100">95</p>
+            <p class="stat-label">% responsive, always</p>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="eyebrow">About me</p>
+          <h2>A story of curiosity and clean code.</h2>
+          <p>I started out breaking other people's CSS to see how it worked, and haven't stopped
+            tinkering since. Today I focus on building websites that are structured with semantic
+            HTML, styled with intention, and tested across every screen size before they ever go
+            live.</p>
+          <p>Whether it's a landing page or a full multi-section site, I care about the same things:
+            clean markup, readable code, and a layout that holds up on a phone just as well as it
+            does on a 27-inch monitor.</p>
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary">Hire me</a>
+            <a href="#projects" class="btn btn-ghost">See my work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills">
+      <div class="wrap">
+        <p class="eyebrow">What I do for you</p>
+        <h2>Skills &amp; services</h2>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+            <h3>Semantic HTML</h3>
+            <p>Well-structured markup using proper header, nav, main and footer sections — built to
+              be readable by people and machines alike.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">◆</span>
+            <h3>CSS &amp; Layout</h3>
+            <p>Custom styling with modern CSS: flexbox, grid, and media queries for layouts that
+              adapt smoothly from mobile to desktop.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">▶</span>
+            <h3>JavaScript</h3>
+            <p>Interactive behavior and form validation that gives visitors real-time, helpful
+              feedback instead of silent failures.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">▲</span>
+            <h3>Deployment</h3>
+            <p>Version control with Git and GitHub, deployed live with GitHub Pages so your project
+              is one link away from anyone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects">
+      <div class="wrap">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb project-thumb--1" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive portfolio with a validated contact form, built with HTML, CSS and
+                JavaScript and deployed on GitHub Pages.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb project-thumb--2" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Weather Dashboard</h3>
+              <p>A small dashboard that fetches live weather data and displays it in a clean,
+                card-based responsive layout.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>API</span><span>CSS Grid</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb project-thumb--3" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Recipe Finder App</h3>
+              <p>Search and filter a recipe collection with instant results and no page reloads,
+                styled to feel calm and uncluttered.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>JavaScript</span><span>UX</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact">
+      <div class="wrap contact-inner">
+        <div class="contact-text">
+          <p class="eyebrow">Let's talk</p>
+          <h2>Have a project in mind?</h2>
+          <p>Fill in the form and I'll get back to you as soon as I can — or reach me directly at
+            <a href="mailto:GirgisEssam@example.com">GirgisEssam@example.com</a>.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name">
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send message</button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year"></span> Girgis Essam. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 </html>
