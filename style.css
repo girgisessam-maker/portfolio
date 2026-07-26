@@ -323,7 +323,7 @@ section{ padding: 96px 0; }
 /* =========================================================
    PROJECTS
 ========================================================= */
-.projects{ background: var(--bg-alt); }
+/* .projects{ background: var(--bg-alt); }
 .projects h2{ font-size: clamp(1.6rem, 3vw, 2.2rem); }
 .projects-grid{
   display: grid;
@@ -362,7 +362,7 @@ section{ padding: 96px 0; }
 }
 @media (max-width: 600px){
   .projects-grid{ grid-template-columns: 1fr; }
-}
+} */
 
 /* =========================================================
    CONTACT
